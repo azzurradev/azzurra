@@ -28,7 +28,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller azzurra.py
+          pyinstaller main.py --name=azzurra
 
       - name: Prepare release folder
         run: |
