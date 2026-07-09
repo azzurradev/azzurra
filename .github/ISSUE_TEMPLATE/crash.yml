@@ -1,0 +1,93 @@
+name: Segnalazione Crash
+description: Segnala un arresto improvviso di Azzurra
+title: "[CRASH] "
+labels:
+  - crash
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un crash di **Azzurra**!
+        Fornisci più informazioni possibili per aiutarci a trovare la causa del problema.
+
+  - type: textarea
+    id: crash_description
+    attributes:
+      label: Descrizione del crash
+      description: Descrivi cosa stavi facendo quando Azzurra si è chiusa.
+      placeholder: "Azzurra si è chiusa quando..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passaggi per riprodurre il crash
+      description: Indica i passaggi che causano il crash.
+      placeholder: |
+        1. Avvia Azzurra
+        2. Apri uno strumento
+        3. Esegui un'azione
+        4. Il programma si chiude
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Errore mostrato
+      description: Inserisci eventuali messaggi di errore o traceback.
+      placeholder: "Incolla qui l'errore..."
+      render: shell
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log aggiuntivi
+      description: Inserisci eventuali log generati da Azzurra.
+      render: shell
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      description: Dove è avvenuto il crash?
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Altro
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Versione Python
+      description: Inserisci la versione di Python utilizzata.
+      placeholder: "Esempio: Python 3.14.0"
+    validations:
+      required: true
+
+  - type: input
+    id: azzurra_version
+    attributes:
+      label: Versione Azzurra
+      description: Inserisci la versione del programma.
+      placeholder: "Esempio: 1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Inserisci informazioni aggiuntive (hardware, installazione, modifiche, ecc.).
+      placeholder: "Esempio: installazione pulita, PC portatile, ecc."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi screenshot o altri dettagli utili.
