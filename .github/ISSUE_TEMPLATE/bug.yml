@@ -3,6 +3,7 @@ description: Segnala un problema o un comportamento inaspettato di Azzurra
 title: "[BUG] "
 labels:
   - bug
+
 body:
   - type: markdown
     attributes:
@@ -15,7 +16,7 @@ body:
     attributes:
       label: Descrizione del bug
       description: Descrivi chiaramente il problema riscontrato.
-      placeholder: Cosa è successo?
+      placeholder: "Cosa è successo?"
     validations:
       required: true
 
@@ -27,7 +28,7 @@ body:
       placeholder: |
         1. Avvia Azzurra
         2. Apri Strumentary
-        3. Premi il pulsante...
+        3. Premi il pulsante interessato
     validations:
       required: true
 
@@ -36,7 +37,7 @@ body:
     attributes:
       label: Comportamento atteso
       description: Cosa dovrebbe succedere invece?
-      placeholder: Il programma dovrebbe...
+      placeholder: "Il programma dovrebbe..."
     validations:
       required: true
 
@@ -45,7 +46,6 @@ body:
     attributes:
       label: Messaggi di errore
       description: Inserisci eventuali errori mostrati dal programma o dal terminale.
-      placeholder: Incolla qui gli errori...
       render: shell
 
   - type: dropdown
@@ -66,7 +66,7 @@ body:
     attributes:
       label: Versione Python
       description: Inserisci la versione di Python utilizzata.
-      placeholder: Esempio: Python 3.14.0
+      placeholder: "Esempio: Python 3.14.0"
     validations:
       required: true
 
@@ -75,7 +75,7 @@ body:
     attributes:
       label: Versione Azzurra
       description: Inserisci la versione di Azzurra.
-      placeholder: Esempio: 1.0.0
+      placeholder: "Esempio: 1.0.0"
     validations:
       required: true
 
