@@ -1,0 +1,86 @@
+name: Segnalazione Bug
+description: Segnala un problema o un comportamento inaspettato di Azzurra
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un bug di **Azzurra**!
+        Compila tutti i campi per aiutarci a risolvere il problema.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del bug
+      description: Descrivi chiaramente il problema riscontrato.
+      placeholder: Cosa è successo?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Come riprodurre il problema
+      description: Indica i passaggi necessari per vedere il bug.
+      placeholder: |
+        1. Avvia Azzurra
+        2. Apri Strumentary
+        3. Premi il pulsante...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento atteso
+      description: Cosa dovrebbe succedere invece?
+      placeholder: Il programma dovrebbe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Messaggi di errore
+      description: Inserisci eventuali errori mostrati dal programma o dal terminale.
+      placeholder: Incolla qui gli errori...
+      render: shell
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      description: Su quale sistema operativo hai riscontrato il problema?
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Altro
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Versione Python
+      description: Inserisci la versione di Python utilizzata.
+      placeholder: Esempio: Python 3.14.0
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versione Azzurra
+      description: Inserisci la versione di Azzurra.
+      placeholder: Esempio: 1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi screenshot, note o altre informazioni utili.
