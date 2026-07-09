@@ -1,7 +1,7 @@
 """
 UN TITOLO DESCRITTIVO.
 
-Versione Azzurra: 1.0.1
+Versione Azzurra: 1.0.2
 Versione Python richiesta: 3.10+
 Richiede: - Tcl/Tk
           - Librerie standard Python
@@ -23,7 +23,7 @@ else:
 """
 Variabili
 """
-azzurra_version = "1.0.1"
+azzurra_version = "1.0.2"
 
 """
 Finestra
