@@ -7,7 +7,6 @@
   **Una suite di strumenti semplice, moderna e accessibile.**
 
   [![Windows Build](https://github.com/azzurradev/azzurra/actions/workflows/windows-build.yml/badge.svg)](https://github.com/azzurradev/azzurra/actions/workflows/windows-build.yml)
-
   [![Linux Build](https://github.com/azzurradev/azzurra/actions/workflows/linux-build.yml/badge.svg)](https://github.com/azzurradev/azzurra/actions/workflows/windows-build.yml)
 
 </div>
