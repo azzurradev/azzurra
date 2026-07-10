@@ -1,0 +1,66 @@
+name: Richiesta Funzionalità
+description: Proponi una nuova funzionalità per Azzurra
+title: "[FEATURE] "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver proposto una nuova funzionalità per **Azzurra**!
+        Descrivi la tua idea nel modo più dettagliato possibile.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Descrizione della funzionalità
+      description: Descrivi la funzionalità che vorresti vedere in Azzurra.
+      placeholder: "Vorrei che Azzurra..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quale problema risolve?
+      description: Spiega perché questa funzionalità sarebbe utile.
+      placeholder: "Attualmente..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Soluzione proposta
+      description: Come immagini che questa funzionalità possa funzionare?
+      placeholder: "La funzionalità potrebbe..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative considerate
+      description: Hai pensato ad altre possibili soluzioni?
+      placeholder: "Potrebbe anche..."
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Area interessata
+      description: Quale parte di Azzurra riguarda questa richiesta?
+      options:
+        - Azzurra
+        - Strumentary
+        - Interfaccia grafica
+        - Documentazione
+        - Altro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi mockup, screenshot o altre informazioni utili.
